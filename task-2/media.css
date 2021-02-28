@@ -1,0 +1,44 @@
+
+@media screen and (max-width:1220px) {
+    .container ul li {
+        flex-basis: 200px;
+        max-width: 100%;
+    }
+
+    .container ul li:nth-of-type(4n+1) {
+        border: 5px solid rgb(71, 71, 71);
+    }
+
+    .container ul li:nth-of-type(3n+1) {
+        border: 5px solid red;
+    }
+
+}
+
+@media screen and (max-width:870px) {
+
+    .container ul li:nth-of-type(4n+1) {
+        border: 5px solid rgb(71, 71, 71);
+    }
+
+    .container ul li:nth-of-type(3n+1) {
+        border: 5px solid rgb(71, 71, 71);
+
+    }
+
+    .container ul li:nth-of-type(2n+1) {
+        border: 5px solid red;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+
+
+    .container ul li:nth-of-type(1n+1) {
+        border: 5px solid red;
+        height: 200px;
+    }
+
+
+}

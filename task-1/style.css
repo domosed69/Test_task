@@ -1,0 +1,71 @@
+.UA,
+.JP,
+.Island,
+.CZ {
+    width: 300px;
+}
+
+.UA_blue {
+    height: 100px;
+    background-color: blue;
+}
+
+.UA_yellow {
+    height: 100px;
+    background-color: yellow;
+}
+
+.JP {
+    margin-top: 30px;
+    height: 200px;
+    border: solid 1px;
+    background: white;
+    display: flex;
+}
+
+.JP_red {
+    width: 130px;
+    height: 130px;
+    background: red;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.Island {
+    margin-top: 30px;
+    height: 200px;
+    background: linear-gradient(blue, blue) 0 0 /50px 78px,
+        linear-gradient(blue, blue) 0 100% /50px 78px,
+        linear-gradient(blue, blue) 100% 0 /205px 78px,
+        linear-gradient(blue, blue) 100% 100%/205px 78px,
+
+        linear-gradient(red, red) 60px 0/ 25px 100%,
+        linear-gradient(red, red) 0 50%/ 100% 25px;
+    background-repeat: no-repeat;
+}
+
+.CZ {
+    margin: 30px 0 0;
+    border: 1px solid;
+    position: relative;
+}
+
+.CZ_white {
+    background-color: white;
+    height: 100px;
+}
+
+.CZ_red {
+    background-color: red;
+    height: 100px;
+}
+
+.CZ::before {
+    content: "";
+    border: 100px solid transparent;
+    border-left: 100px solid blue;
+    position: absolute;
+    top: 50%;
+    transform: translate(0px, -50%);
+
+}
